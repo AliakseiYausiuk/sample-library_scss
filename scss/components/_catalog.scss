@@ -1,0 +1,48 @@
+.catalog {
+  @include disp-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6rem 0;
+
+  &.catalog-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: $color-gray;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__descr {
+    max-width: 37.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    border-radius: 0.8rem;
+    background-color: $color-blue;
+    padding: 0.8rem 2rem;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-white;
+    }
+  }
+
+  &__image {
+    max-width: 58rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
