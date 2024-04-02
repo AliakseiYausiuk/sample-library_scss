@@ -68,6 +68,7 @@ ol {
 .header__buttons--singup:hover {
   background-color: #0033ff;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .header .nav {
   display: flex;
@@ -153,6 +154,7 @@ ol {
 .producer__link:hover {
   color: #121214;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .catalog {
@@ -188,6 +190,7 @@ ol {
 .catalog__link:hover {
   color: #121214;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .catalog__image {
   max-width: 58rem;
@@ -202,6 +205,7 @@ ol {
 .always {
   color: #121214;
   padding: 2rem 0;
+  margin-bottom: 9rem;
 }
 .always__image-wrapper {
   width: 22.3rem;
@@ -238,6 +242,32 @@ ol {
   color: #a6a8ad;
   line-height: 2rem;
   font-weight: 400;
+}
+
+.today {
+  height: 72.8rem;
+  background: center/cover no-repeat url(../../asset/images/person_play_piano_1200x728.png);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5.7rem;
+  margin-bottom: 5rem;
+}
+.today__title {
+  font-size: 5.4rem;
+  font-weight: 400;
+}
+.today__link {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #0033ff;
+  border-radius: 0.8rem;
+}
+.today__link:hover {
+  color: #121214;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (width < 780px) {
