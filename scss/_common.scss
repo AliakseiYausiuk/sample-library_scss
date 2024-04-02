@@ -16,6 +16,22 @@ body {
   color: $color-white;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
