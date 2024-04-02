@@ -25,5 +25,10 @@
     background-color: $color-blue;
     border-radius: 0.8rem;
     max-width: 12.5rem;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-white;
+    }
   }
 }
