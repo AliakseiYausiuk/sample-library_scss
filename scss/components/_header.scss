@@ -2,6 +2,8 @@
   height: 7.1rem;
   @include disp-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
 
   &__buttons {
     @include disp-flex;
@@ -11,6 +13,10 @@
   &__buttons--login {
     color: $color-gray;
     background-color: transparent;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 
   &__buttons--singup {
@@ -18,6 +24,11 @@
     padding: 0.8rem 2rem;
     border-radius: 3.2rem;
     color: $color-dark;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+    }
   }
 
   .nav {
@@ -41,6 +52,18 @@
       width: 9.7rem;
       height: 3rem;
       object-fit: contain;
+    }
+
+    &__burger {
+      cursor: pointer;
+      display: none;
+
+      span {
+        display: inline-block;
+        width: 3rem;
+        height: 0.3rem;
+        background-color: $color-white;
+      }
     }
   }
 }
