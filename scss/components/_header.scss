@@ -1,0 +1,46 @@
+.header {
+  height: 7.1rem;
+  @include disp-flex;
+  justify-content: space-between;
+
+  &__buttons {
+    @include disp-flex;
+    gap: 2rem;
+  }
+
+  &__buttons--login {
+    color: $color-gray;
+    background-color: transparent;
+  }
+
+  &__buttons--singup {
+    background-color: $color-white;
+    padding: 0.8rem 2rem;
+    border-radius: 3.2rem;
+    color: $color-dark;
+  }
+
+  .nav {
+    @include disp-flex;
+    gap: 2.9rem;
+
+    &__items {
+      @include disp-flex;
+      gap: 2rem;
+    }
+
+    &__link {
+      color: $color-gray;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &__logo {
+      width: 9.7rem;
+      height: 3rem;
+      object-fit: contain;
+    }
+  }
+}
