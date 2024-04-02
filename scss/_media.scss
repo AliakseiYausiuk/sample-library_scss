@@ -1,0 +1,33 @@
+@media (width < 780px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0 2rem;
+    height: auto;
+  }
+}
+
+@media (width < 610px) {
+  .header {
+    .nav {
+      &__items {
+        display: none;
+      }
+
+      &__burger {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.7rem;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+// @media (width < 682px) {
+//   .sounds {
+//   }
+// }
