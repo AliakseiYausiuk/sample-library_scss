@@ -32,7 +32,12 @@ ol {
   list-style-type: none;
 }
 
+p {
+  text-align: center;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 1rem 1.5rem;
 }
