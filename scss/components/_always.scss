@@ -1,0 +1,43 @@
+.always {
+  color: $color-dark;
+  padding: 2rem 0;
+
+  &__image-wrapper {
+    width: 22.3rem;
+    height: 22.3rem;
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(36.1rem, min-content));
+  }
+
+  &__card {
+    background-color: $color-white;
+    padding: 3.2rem;
+    border-radius: 0.8rem;
+    @include disp-flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__descr {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  &__title--h4 {
+    align-self: self-start;
+    font-size: 1.4rem;
+    color: $color-gray;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+}
