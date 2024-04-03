@@ -270,6 +270,46 @@ ol {
   transition: all 0.3s ease-in-out;
 }
 
+.footer {
+  padding: 5rem 0;
+}
+.footer__nav {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+.footer__block--link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.footer__link {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #a6a8ad;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__link:hover img {
+  opacity: 0.5;
+}
+.footer__link_first {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.footer__nav--links {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+}
+
 @media (width < 780px) {
   .header {
     flex-wrap: wrap;
