@@ -1,0 +1,45 @@
+.footer {
+  padding: 5rem 0;
+
+  &__nav {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 8rem;
+  }
+
+  &__block--link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-gray;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &:hover img {
+      opacity: 0.5;
+    }
+  }
+
+  &__link_first {
+    font-size: 2rem;
+    color: $color-white;
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__nav--links {
+    @include disp-flex;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+}
